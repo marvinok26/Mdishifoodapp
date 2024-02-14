@@ -7,20 +7,20 @@
 }
 
 .social-media {
-  margin-top: 20px; /* Adjust spacing from the form */
+  margin-top: 20px;
   display: flex;
-  justify-content: center; /* Align icons horizontally */
+  justify-content: center;
 }
 
 .social-media a {
-  margin: 0 10px; /* Adjust spacing between icons */
+  margin: 0 10px;
   color: #333;
-  font-size: 24px; /* Increase icon size */
-  transition: color 0.3s ease; /* Add smooth transition */
+  font-size: 24px;
+  transition: color 0.3s ease;
 }
 
 .social-media a:hover {
-  color: #007bff; /* Change color on hover */
+  color: red;
 }
 
 .contact-form {
