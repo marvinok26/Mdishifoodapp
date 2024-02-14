@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NavBar from "./components/NavBar";
+import NavBar from "./NavBar";
 import Footer from "./Footer";
 import FoodList from './FoodList';
 import ViewCart from './ViewCart'; 
@@ -51,6 +51,6 @@ function App() {
       <Footer />
     </div>
   );
-};
+}
 
 export default App;
