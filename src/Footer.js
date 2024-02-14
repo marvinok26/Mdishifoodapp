@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./Footer.css";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -42,13 +43,8 @@ const Footer = () => {
 
   return (
     <footer className="footer-container">
-      <div className="social-media">
-        <a href="https://www.facebook.com">Facebook</a>
-        <a href="https://www.instagram.com">Instagram</a>
-        <a href="https://www.x.com">X</a>
-      </div>
       <div className="contact-form">
-        <h2>Contact Us</h2>
+        <h2>Feedback</h2>
         <form>
           <label htmlFor="email">Email:</label>
           <input
@@ -69,6 +65,19 @@ const Footer = () => {
           <button type="submit">Submit</button>
         </form>
       </div>
+
+      <div className="social-media">
+        <a href="https://www.facebook.com">
+          <i className="fa fa-facebook"></i> {/* Font Awesome Facebook icon */}
+        </a>
+        <a href="https://www.instagram.com">
+          <i className="fa fa-instagram"></i>{" "}
+          {/* Font Awesome Instagram icon */}
+        </a>
+        <a href="https://www.x.com">X</a>
+      </div>
+
+      <div className="address">345 Main Street, Nairobi , Kenya</div>
     </footer>
   );
 };
