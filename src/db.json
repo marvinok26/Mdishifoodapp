@@ -53,6 +53,7 @@
         "name": "Lunchbox",
         "cuisine": "Sandwiches",
         "rating": 4.4,
+        "website": "https://www.instagram.com/lunchboxea/?hl=en",
         "menu": [
           { "id": 501, "name": "Classic Club Sandwich", "price": 9.99, "imageUrl": "https://media.istockphoto.com/id/534408608/photo/bacon-lettuce-tomato-blt-sandwich.jpg?s=612x612&w=0&k=20&c=semfgzMjhspjCPS3Ld2wgkAfnlQmVe0Ci6V_Kwfhjkk=" },
           { "id": 502, "name": "Caprese Panini", "price": 8.99, "imageUrl": "https://media.istockphoto.com/id/484476780/photo/close-up-sandwich-platter.jpg?s=612x612&w=0&k=20&c=RT53lI-yT_u-wt3YuMdP7Bx0D-IHRRK8HQX5-n68964=" },
@@ -64,6 +65,7 @@
         "name": "Thai Chi by Sarova",
         "cuisine": "Thai",
         "rating": 4.6,
+        "website": "https://www.sarovahotels.com/restaurant-bar/thai-chi-by-sarova.html",
         "menu": [
           { "id": 601, "name": "Tom Yum Soup", "price": 11.99, "imageUrl": "https://media.istockphoto.com/id/1392660302/photo/tom-yam-kung-prawn-and-lemon-soup-with-mushrooms-thai-food-in-wooden-bowl-top-view.jpg?s=612x612&w=0&k=20&c=BZUh3_h2QLS3HTyBl5hDNoQwg_1xXLt5L0rYsug3yJs=" },
           { "id": 602, "name": "Green Curry Chicken", "price": 14.99, "imageUrl": "https://media.istockphoto.com/id/1140580445/photo/thai-green-curry.jpg?s=612x612&w=0&k=20&c=55r_mPreDyGcNLQPXzK9PAC2m8DXU1uN_9t4Zw_q8dU=" },
@@ -75,6 +77,7 @@
         "name": "Alloy",
         "cuisine": "Modern American",
         "rating": 4.7,
+        "website": "https://alloydining.com/",
         "menu": [
           { "id": 701, "name": "Truffle Mac & Cheese", "price": 15.99, "imageUrl": "https://media.istockphoto.com/id/515684707/photo/pasta-norcina.jpg?s=612x612&w=0&k=20&c=EtHDaDR13WS2vb5GGq8pzcuJaCWKh_qKp7ChAmjy7X4=" },
           { "id": 702, "name": "Short Rib Tacos", "price": 13.99, "imageUrl": "https://media.istockphoto.com/id/1323688568/photo/crispy-fried-birria-tacos.jpg?s=612x612&w=0&k=20&c=RX-a49iSEtfbLv4CcsJW18PpfGn3ezACkDrs_iac-bE=" },
@@ -86,6 +89,7 @@
         "name": "The Curve",
         "cuisine": "Steakhouse",
         "rating": 4.9,
+        "website": "https://www.instagram.com/the_curve_kitchen/?hl=en",
         "menu": [
           { "id": 801, "name": "Filet Mignon", "price": 27.99, "imageUrl": "https://media.istockphoto.com/id/953878856/photo/raw-chicken-breast-pepper-rosemary-on-a-cutting-board-on-a-wooden-background-top-view-raw.jpg?s=612x612&w=0&k=20&c=7lSfogDzfQGiULcI8SfuA-kgxbxSfFsYahX1x7PR-gQ=" },
           { "id": 802, "name": "Ribeye Steak", "price": 24.99, "imageUrl": "https://media.istockphoto.com/id/587207508/photo/sliced-grilled-steak-ribeye-with-herb-butter.jpg?s=612x612&w=0&k=20&c=gm6Kg6rHYH0xWTF5oszm6NZ-hp9aPRbk9V1kvCr8MQI=" },
@@ -97,6 +101,7 @@
         "name": "Gallitos",
         "cuisine": "Mexican",
         "rating": 4.3,
+        "website": "https://galitos.co.ke/",
         "menu": [
           { "id": 901, "name": "Chicken Quesadilla", "price": 10.99, "imageUrl": "https://media.istockphoto.com/id/1159174146/photo/quesadilla-with-chicken-and-sauces.jpg?s=612x612&w=0&k=20&c=c_w0YgNkZO2X2MPIjAS2OYWoBkm7tPLOQOhHABfR8Ao=" },
           { "id": 902, "name": "Beef Burrito", "price": 12.99, "imageUrl": "https://media.istockphoto.com/id/1300815223/photo/beef-burritos-with-beans-and-cheese.jpg?s=612x612&w=0&k=20&c=zRKJQlfhj094-czZ4guY2NUb-Ws5Mu3gAMJNTtoYP8c=" },
