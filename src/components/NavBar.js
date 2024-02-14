@@ -1,16 +1,18 @@
+// Import non-relative imports first
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import AboutUs from './Pages/AboutUs';
+import ContactUs from './Pages/ContactUs';
+
 import './NavBar.css'; // Import the CSS file
 
 const Home = () => <div>Home Page</div>;
-const AboutUs = () => <div>About Us Page</div>;
-const ContactUs = () => <div>Contact Us Page</div>;
 
 const NavBar = () => {
   return (
     <Router>
       <nav className="navbar">
-        <div className="logo">Mdishi</div>
+        <div className="logo">mdishi</div>
         <ul className="nav-list">
           <li className="nav-item">
             <Link to="/" className="nav-link">Home</Link>
