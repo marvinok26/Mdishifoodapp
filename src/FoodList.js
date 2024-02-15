@@ -1,7 +1,14 @@
 import React from 'react';
 import './Foodlist.css'; 
 import ViewCartButton from './ViewCartButton'; 
+
 function FoodList({ foods, addToCart, setShowCart, cartItemCount }) {
+
+  const handleAddToCart = (itemName, itemId, itemPrice) => {
+    addToCart(itemName, itemId, itemPrice);
+    alert(`Added ${itemName} to the cart!`);
+  };
+
   return (
     <div>
       <div className="view-cart-button-container">
@@ -20,7 +27,7 @@ function FoodList({ foods, addToCart, setShowCart, cartItemCount }) {
                   <div className="item-details">
                     <h3>{item.name}</h3>
                     <p>Price: ${item.price.toFixed(2)}</p>
-                    <button onClick={() => addToCart(item.name, item.id, item.price)}>Add to Cart</button>
+                    <button onClick={() => handleAddToCart(item.name, item.id, item.price)}>Add to Cart</button>
                   </div>
                 </div>
               ))}
