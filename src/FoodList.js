@@ -1,15 +1,44 @@
-import React from 'react';
-import './Foodlist.css'; 
+import React, { useState, useEffect } from 'react';
+import './Foodlist.css'; // Import CSS file for styling
+import ViewCartButton from './ViewCartButton'; // Import ViewCartButton component
 
-import ViewCartButton from './ViewCartButton'; 
-function FoodList({ foods, addToCart, setShowCart, cartItemCount }) {
+function FoodList({ addToCart, setShowCart, cartItemCount }) {
+  const [foods, setFoods] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
+
+  useEffect(() => {
+    // Fetch data from the provided URL
+    fetch('https://mdishidatabase.vercel.app/foods')
+      .then(response => response.json())
+      .then(data => setFoods(data))
+      .catch(error => console.error('Error fetching data:', error));
+  }, []);
+
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value.toLowerCase());
+  };
+
+  // Filter foods based on search term
+  const filteredFoods = searchTerm ? foods.filter(food =>
+    food.name.toLowerCase().includes(searchTerm) ||
+    food.menu.some(item => item.name.toLowerCase().includes(searchTerm))
+  ) : foods;
+
   return (
     <div>
       <div className="view-cart-button-container">
         <ViewCartButton onClick={() => setShowCart(true)} cartItemCount={cartItemCount} />
       </div>
+      <div className="search-container">
+        <input
+          type="text"
+          placeholder="Search by food or item name"
+          value={searchTerm}
+          onChange={handleSearchChange}
+        />
+      </div>
       <div className="food-list">
-        {foods.map(food => (
+        {filteredFoods.map(food => (
           <div key={food.id} className="food-tile">
             <h2>{food.name}</h2>
             <p>Cuisine: {food.cuisine}</p>
@@ -29,6 +58,7 @@ function FoodList({ foods, addToCart, setShowCart, cartItemCount }) {
             <a href={food.website} target="_blank" rel="noopener noreferrer">Visit Website</a>
           </div>
         ))}
+        {filteredFoods.length === 0 && <p>No items found</p>}
       </div>
     </div>
   );
