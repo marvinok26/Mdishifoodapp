@@ -11,7 +11,7 @@ const NavBar = () => {
   return (
     <Router>
       <nav className="navbar">
-        <div className="logo">mdishi</div>
+        <div className="logo">mdishi App</div>
         <ul className="nav-list">
           <li className="nav-item">
             <Link to="/" className="nav-link">Home</Link>
