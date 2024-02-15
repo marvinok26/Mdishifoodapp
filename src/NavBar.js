@@ -1,8 +1,8 @@
 // Import non-relative imports first
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import AboutUs from './Pages/AboutUs';
-import ContactUs from './Pages/ContactUs';
+import AboutUs from './components/Pages/AboutUs';
+import ContactUs from './components/Pages/ContactUs';
 
 import './NavBar.css'; // Import the CSS file
 
