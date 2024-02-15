@@ -1,4 +1,4 @@
-# Project Title :MDISHI FOOD APP
+# PROJECT TITLE :MDISHI FOOD APP
 
 # PROJECT AUTHORS
 weddy makena
