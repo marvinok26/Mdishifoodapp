@@ -1,4 +1,3 @@
-// Import non-relative imports first
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import AboutUs from './components/Pages/AboutUs';
@@ -12,7 +11,7 @@ const NavBar = () => {
   return (
     <Router>
       <nav className="navbar">
-        <div className="logo">mdishi</div>
+        <div className="logo">mdishi App</div>
         <ul className="nav-list">
           <li className="nav-item">
             <Link to="/" className="nav-link">Home</Link>
@@ -25,14 +24,13 @@ const NavBar = () => {
           </li>
         </ul>
       </nav>
-
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
     </Router>
   );
-};
+}
 
 export default NavBar;
