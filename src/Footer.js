@@ -17,7 +17,7 @@ const Footer = () => {
     const submitFeedback = async () => {
       if (email && feedback) {
         try {
-          const response = await fetch("http://localhost:3000/form", {
+          const response = await fetch("https://mdishi.vercel.app/foods", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
