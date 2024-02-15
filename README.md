@@ -1,6 +1,6 @@
- Project Title :Mdishi food app
+# Project Title :MDISHI FOOD APP
 
-Project authors 
+# PROJECT AUTHORS
 weddy makena
 marvin okongo
 john kiguma
@@ -8,7 +8,7 @@ leon onditi
 abdifatar fara
  //
 
- Features
+# FEATURES
 
     Restaurant Listings: The app displays a variety of restaurants with their menus, allowing users to browse and select their desired items.
 
