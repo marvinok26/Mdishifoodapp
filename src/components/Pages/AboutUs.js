@@ -1,15 +1,20 @@
 
 import React from 'react';
 import './AboutUs.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'; // Import the Font Awesome icon
+
 
 const AboutUs = () => {
   return (
     <div className="page-container">
+
       <section className="about-section">
         <h2>About Us</h2>
         <div className="paragraph-container">
   <p className="paragraph-text">
     Welcome to Mdishi, where culinary innovation meets delightful experiences! At Mdishi, we take pride in curating a culinary journey that transcends traditional dining. Our commitment to quality ingredients, expert craftsmanship, and a passion for flavor ensures each dish is a masterpiece.
+    We are a passionate team dedicated to providing delicious and healthy food options.
 
     Discover a symphony of tastes as our chefs artfully blend diverse cuisines, creating a menu that caters to every palate. Mdishi isn't just a restaurant; it's an exploration of culinary excellence, a place where food becomes an experience.
 <br /><span>
@@ -87,6 +92,18 @@ const AboutUs = () => {
           {/* Add more achievements as needed */}
         </div>
       </section>
+
+      <div className="map-container">
+        <iframe
+          title="Maps"
+          src="https://api.maptiler.com/maps/fe7da9bc-0ca3-4ea0-8090-a93c5d514a09/?key=spPhAOyghywnutBw51qW#12.0/-1.3024715/36.7103707"
+          width="100%"
+          height="700px"
+        ></iframe>
+        <div className="marker">
+          <FontAwesomeIcon icon={faMapMarkerAlt} />
+        </div>
+      </div>
     </div>
   );
 };

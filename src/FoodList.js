@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 import './Foodlist.css'; // Import CSS file for styling
 import ViewCartButton from './ViewCartButton'; // Import ViewCartButton component
 
-function FoodList({ addToCart, setShowCart, cartItemCount }) {
+function FoodList({addToCart, setShowCart, cartItemCount }) {
+  const handleAddToCart = (itemName, itemId, itemPrice) => {
+    addToCart(itemName, itemId, itemPrice);
+    alert(`Added ${itemName} @ $${itemPrice} to the cart!`);
+  };
   const [foods, setFoods] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -50,7 +54,7 @@ function FoodList({ addToCart, setShowCart, cartItemCount }) {
                   <div className="item-details">
                     <h3>{item.name}</h3>
                     <p>Price: ${item.price.toFixed(2)}</p>
-                    <button onClick={() => addToCart(item.name, item.id, item.price)}>Add to Cart</button>
+                    <button onClick={() => handleAddToCart(item.name, item.id, item.price)}>Add to Cart</button>
                   </div>
                 </div>
               ))}
