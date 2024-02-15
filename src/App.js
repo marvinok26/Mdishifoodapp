@@ -13,7 +13,7 @@ function App() {
   const addToCart = (itemName, itemId, itemPrice) => {
     const newItem = { name: itemName, id: itemId, price: itemPrice };
     setCartItems([...cartItems, newItem]);
-    console.log(Added ${itemName} (ID: ${itemId}, Price: ${itemPrice}) to cart);
+    console.log(`Added ${itemName} (ID: ${itemId}, Price: ${itemPrice}) to cart`);
   };
 
   const removeFromCart = (itemId) => {
