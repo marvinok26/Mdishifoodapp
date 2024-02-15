@@ -1,3 +1,26 @@
+Project authors 
+weddy makena
+marvin okongo
+john kiguma
+leon onditi 
+abdifatar fara
+ //
+ Project Title :Mdishi food app 
+
+ Features
+
+    User Registration and Authentication: Users can create accounts, log in, and authenticate their identity for a personalized experience.
+
+    Restaurant Listings: The app displays a variety of restaurants with their menus, allowing users to browse and select their desired items.
+
+    Order Placement: Users can add food items to their cart, customize orders, and place requests for delivery.
+
+    Real-time Order Tracking: Users can track the status of their orders in real-time, from preparation to delivery.
+
+    Secure Payments: The app supports secure and convenient payment options, ensuring a smooth transaction process.
+
+    Ratings and Reviews: Users can rate and review restaurants, providing valuable feedback for others.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
