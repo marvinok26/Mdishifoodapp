@@ -5,7 +5,9 @@ import ContactUs from './components/Pages/ContactUs';
 
 import './NavBar.css'; // Import the CSS file
 
-const Home = () => <div>Home Page</div>;
+const Home = () => <div>
+  
+</div>;
 
 const NavBar = () => {
   return (
