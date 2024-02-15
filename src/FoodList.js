@@ -6,7 +6,7 @@ function FoodList({ foods, addToCart, setShowCart, cartItemCount }) {
 
   const handleAddToCart = (itemName, itemId, itemPrice) => {
     addToCart(itemName, itemId, itemPrice);
-    alert(`Added ${itemName} to the cart!`);
+    alert(`Added ${itemName} @ $${itemPrice} to the cart!`);
   };
 
   return (
