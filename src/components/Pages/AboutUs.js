@@ -27,27 +27,27 @@ const AboutUs = () => {
       <section>
       <div className="team-container">
   <div className="team-member">
-    <img src="team-member1.jpg" alt="Team Member 1" />
-    <p>John Doe<br />CEO</p>
+    <img src="https://cdn.pixabay.com/photo/2017/02/16/23/10/smile-2072907_960_720.jpg" alt="Team Member 1" />
+    <p>Calvis Marvis<br />CEO</p>
   </div>
 
   <div className="team-member">
-    <img src="team-member2.jpg" alt="Team Member 2" />
+    <img src="https://cdn.pixabay.com/photo/2017/12/17/08/12/girl-3023831_640.jpg" alt="Team Member 2" />
     <p>Jane Smith<br />Lead Developer</p>
   </div>
 
   <div className="team-member">
-    <img src="team-member3.jpg" alt="Team Member 3" />
+    <img src="https://cdn.pixabay.com/photo/2017/08/01/01/33/beanie-2562646_640.jpg" alt="Team Member 3" />
     <p>Mark Johnson<br />Chef</p>
   </div>
 
   <div className="team-member">
-    <img src="team-member4.jpg" alt="Team Member 4" />
+    <img src="https://cdn.pixabay.com/photo/2016/10/15/05/02/girls-1741925_640.jpg" alt="Team Member 4" />
     <p>Emily White<br />Marketing Specialist</p>
   </div>
 
   <div className="centered-team-member">
-    <img src="team-member5.jpg" alt="Team Member 5" />
+    <img src="https://cdn.pixabay.com/photo/2015/01/09/11/11/office-594132_640.jpg" alt="Team Member 5" />
     <p>Michael Brown<br />Designer</p>
   </div>
 </div>
@@ -55,7 +55,7 @@ const AboutUs = () => {
 
       {/* Section 3: Food App Image and Paragraph */}
       <section className="food-app-section">
-        <img src="food-app-image.jpg" alt="Food App" />
+        <img src="https://cdn.pixabay.com/photo/2016/03/23/15/00/ice-cream-1274894_640.jpg" alt="Food App" />
         <div>
           <h2>About Our Food App</h2>
           <div className="header-container">
@@ -82,12 +82,12 @@ const AboutUs = () => {
         <h2>Our Achievements</h2>
         <div className="achievements-container">
           <div className="achievement">
-            <img src="achievement1.jpg" alt="Achievement 1" />
-            <p>Achievement 1 Description</p>
+            <img src="https://cdn.pixabay.com/photo/2012/02/28/10/20/coins-18134_640.jpg" alt="Achievement 1" />
+            <p>Financial Achievements</p>
           </div>
           <div className="achievement">
-            <img src="achievement2.jpg" alt="Achievement 2" />
-            <p>Achievement 2 Description</p>
+            <img src="https://cdn.pixabay.com/photo/2015/07/28/22/05/child-865116_640.jpg" alt="Achievement 2" />
+            <p>Learning Empowerment</p>
           </div>
           {/* Add more achievements as needed */}
         </div>
