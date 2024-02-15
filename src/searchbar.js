@@ -4,24 +4,23 @@ const SearchBar = () => {
   const [foods, setFoods] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
-  useEffect(() => {
-    fetch('http://localhost:3000/foods')
-      .then(response => response.json())
-      .then(data => setFoods(data.foods))
-      .catch(error => console.error('Error fetching ', error));
-  }, []);
-
-  const handleSearch = (event) => {
+  const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
   };
 
-  const filteredFoods = foods.filter(food =>
-    food.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredFoods = searchTerm ? foods.filter(food =>
+    food.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    food.menu.some(item => item.name.toLowerCase().includes(searchTerm.toLowerCase()))
+  ) : foods;
 
   return (
     <div>
-      <input type="text" placeholder="Search for food" onChange={handleSearch} />
+      <input
+        type="text"
+        placeholder="Search by food or item name"
+        value={searchTerm}
+        onChange={handleSearchChange}
+      />
       <ul>
         {filteredFoods.map(food => (
           <li key={food.id}>
@@ -35,4 +34,3 @@ const SearchBar = () => {
 };
 
 export default SearchBar;
-//
