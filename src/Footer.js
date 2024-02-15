@@ -17,13 +17,16 @@ const Footer = () => {
     const submitFeedback = async () => {
       if (email && feedback) {
         try {
-          const response = await fetch("https://mdishi.vercel.app/foods", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ email, feedback }),
-          });
+          const response = await fetch(
+            "https://mdishidatabase.vercel.app/form",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ email, feedback }),
+            }
+          );
 
           if (!response.ok) {
             throw new Error("Failed to submit feedback");
