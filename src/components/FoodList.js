@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./Foodlist.css"; // Import CSS file for styling
-import ViewCartButton from "./ViewCartButton"; // Import ViewCartButton component
+import "./Foodlist.css";
+import ViewCartButton from "./ViewCartButton";
 
 function FoodList({ addToCart, setShowCart, cartItemCount }) {
   const handleAddToCart = (itemName, itemId, itemPrice) => {

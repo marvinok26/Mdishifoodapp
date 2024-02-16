@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function ViewCart({ cartItems, closeCart, removeFromCart }) {
   const itemsWithPrices = cartItems.filter(item => item.price && typeof item.price === 'number');
 
@@ -10,17 +11,28 @@ function ViewCart({ cartItems, closeCart, removeFromCart }) {
   };
 
   return (
-    <div>
+    <div className="view-cart-container">
       <h2>Cart Items</h2>
-      <ul>
-        {itemsWithPrices.map((item, index) => (
-          <li key={index}>
-            {item.name} - ${item.price.toFixed(2)}
-            <button onClick={() => handleRemove(item.id)}>X</button>
-          </li>
-        ))}
-      </ul>
-      <p>Total Price: ${totalPrice.toFixed(2)}</p>
+      {itemsWithPrices.length === 0 ? (
+        <p>Your cart is empty.</p>
+      ) : (
+        <>
+          <ul>
+            {itemsWithPrices.map((item, index) => (
+              <li key={index}>
+                {item.name} - ${item.price.toFixed(2)}
+                <button
+                  onClick={() => handleRemove(item.id)}
+                  aria-label={`Remove ${item.name} from cart`}
+                >
+                  X
+                </button>
+              </li>
+            ))}
+          </ul>
+          <p>Total Price: ${totalPrice.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</p>
+        </>
+      )}
       <button onClick={closeCart}>Close Cart</button>
     </div>
   );
