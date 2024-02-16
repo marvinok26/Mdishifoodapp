@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import NavBar from './NavBar';
-import Footer from './Footer';
-import FoodList from './FoodList';
-import ViewCart from './ViewCart';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import FoodList from './components/FoodList';
+import ViewCart from './components/ViewCart';
 
 function App() {
   const [showCart, setShowCart] = useState(false);
