@@ -18,11 +18,11 @@ abdifatar fara
 
     Ratings and Reviews: Users can rate and review restaurants, providing valuable feedback for others.
 
-# Getting Started with Create React App
+# GETTING STARTED
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## AVAILABLE SCRIPTS
 
 In the project directory, you can run:
 
