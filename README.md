@@ -1,11 +1,11 @@
 # PROJECT TITLE :MDISHI FOOD APP
 
 # PROJECT AUTHORS
-weddy makena
-marvin okongo
-john kiguma
-leon onditi 
-abdifatar fara
+Weddy makena
+Marvin okongo
+John kiguma
+Leon onditi 
+Abdifatar fara
  //
 
 # FEATURES
